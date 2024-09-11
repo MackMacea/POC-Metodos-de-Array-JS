@@ -113,6 +113,8 @@ o modo como sera reduzido, neste caso somando.
  //permitidos = [ 18, 19, 25, 32, 33, 54 ]
  ~~~
 
+ Importante ressaltar que o método não funciona para valores vazios (null), e também não altera o array original
+
  ## Sort
  O método sort tem por objetivo organizar os elementos de uma array seguindo uma logica informada pelo desenvolvedor. <br>
  <br>
