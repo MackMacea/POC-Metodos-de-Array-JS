@@ -104,12 +104,13 @@ o modo como sera reduzido, neste caso somando.
  Então, queremos filtrar apenas as idades que podem dirigir veícuos automotores no Brasil, ou seja, igual ou maiores de 18 anos, teriamos a seguinte função:
  ~~~javascript
  function habilitacao(idades) {
-	return age >= 18;
+	return idades >= 18;
  }
  ~~~
  Para retornar um novo array já com os resultados, basta utilizar o método 'filter', indicando dentro do parenteses a condição ou função que deseja filtrar :
  ~~~javascript
  const permitidos = idades.filter(habilitacao);
+ //permitidos = [ 18, 19, 25, 32, 33, 54 ]
  ~~~
 
  ## Sort
