@@ -55,7 +55,7 @@ const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
  Basta aplicar a função map, indicando dentro do parenteses a função que deseja aplicar para cada valor do array:
  ~~~javascript
  const raizQuadrada = numeros.map(Math.sqrt)
- // resultado: [2, 3, 4, 5]
+ // raizQuadrada = [2, 3, 4, 5]
  ~~~~
 
  ## Reduce
