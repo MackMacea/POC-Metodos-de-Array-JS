@@ -14,7 +14,37 @@
 
 
  ## Spread
+ O operador "spread" do JavaScript ( ...) expande um iterável (como uma matriz) em mais elementos.<br>
+ Isso nos permite copiar rapidamente todas as partes de um array existente para outro array:
+ ~~~javascript
+ const numbersOne = [1, 2, 3];
+ const numbersTwo = [4, 5, 6];
+ const numbersCombined = [...numbersOne, ...numbersTwo];
+ ~~~~
 
+ O operador "spread" é frequentemente usado para extrair apenas o que é necessário de uma matriz:
+ ~~~javascript
+ const numbers = [1, 2, 3, 4, 5, 6];
+
+ const [one, two, ...rest] = numbers;
+ ~~~~
+
+ Podemos usar o operador "spread" também com objetos:
+ ~~~javascript
+ const myVehicle = {
+  brand: 'Ford',
+  model: 'Mustang',
+  color: 'red'
+}
+
+const updateMyVehicle = {
+  type: 'car',
+  year: 2021,
+  color: 'yellow'
+}
+
+const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
+ ~~~~
  ## Map
 
  ## Reduce
