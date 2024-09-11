@@ -46,13 +46,13 @@ const updateMyVehicle = {
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
  ~~~~
  ## Map
- O operador MAP no javascript consegue executar uma funcão diretamente para cada elemento do array
+ O método MAP no javascript consegue executar uma funcão diretamente para cada elemento do array
 
  Por exemplo, imagine que desejamos retornar a raiz quadrada dos números abaixo:
  ~~~javascript
  const numeros = [4, 9, 16, 25]
  ~~~~
- Basta aplicar a função map, indicando dentro do parenteses a função que deseja aplicar para cada valor do array:
+ Basta aplicar o método map, indicando dentro do parenteses a função que deseja aplicar para cada valor do array:
  ~~~javascript
  const raizQuadrada = numeros.map(Math.sqrt)
  // raizQuadrada = [2, 3, 4, 5]
@@ -94,6 +94,23 @@ o modo como sera reduzido, neste caso somando.
 
 
  ## Filter
+ O método filter basicamente filtra um array respeitando as condições indicadas pelo usuário, retornando os resultados em um novo array.
+
+ Por exemplo, considere o array abaixo que contenha as idades de diversas pessoas:
+ ~~~javascript
+ const idades = [5, 12, 15, 17, 18, 19, 25, 32, 33, 54];
+ ~~~
+
+ Então, queremos filtrar apenas as idades que podem dirigir veícuos automotores no Brasil, ou seja, igual ou maiores de 18 anos, teriamos a seguinte função:
+ ~~~javascript
+ function habilitacao(idades) {
+	return age >= 18;
+ }
+ ~~~
+ Para retornar um novo array já com os resultados, basta utilizar o método 'filter', indicando dentro do parenteses a condição ou função que deseja filtrar :
+ ~~~javascript
+ const permitidos = idades.filter(habilitacao);
+ ~~~
 
  ## Sort
  O método sort tem por objetivo organizar os elementos de uma array seguindo uma logica informada pelo desenvolvedor. <br>
