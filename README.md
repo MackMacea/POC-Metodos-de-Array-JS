@@ -46,6 +46,16 @@ const updateMyVehicle = {
 const myUpdatedVehicle = {...myVehicle, ...updateMyVehicle}
  ~~~~
  ## Map
+ O operador MAP no javascript consegue executar uma funcão diretamente para cada elemento do array
+
+ Por exemplo, imagine que desejamos retornar a raiz quadrada dos números abaixo:
+ ~~~javascript
+ const numeros = [4, 9, 16, 25]
+ ~~~~
+ Basta aplicar a função map, indicando dentro do parenteses a função que deseja aplicar para cada valor do array:
+ ~~~javascript
+ const raizQuadrada = numeros.map(Math.sqrt)
+ ~~~~
 
  ## Reduce
  Este metodo tem por objetivo transformar todo o conteudo de uma Array em apenas um elemento.<br>
